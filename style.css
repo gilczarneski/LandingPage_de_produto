@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+
+  /*Cores Primarias*/
+
+  --Cyan: #2ab2af;
+  --Bright-Yellow: #c0df34;
+
+  /*Cores Neutras*/
+
+  --Light-Gray: #e5eff5;
+  --Grayish-Blue: #98a6bd;
+  --Branco: #ffffff;
+}
+
+body{
+  font-size: 1.6rem;
+  font-family: 'Karla', sans-serif;
+  background-color: var(--Light-Gray);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+  border: #00ff00 solid;
+}
+
+.invite{
+  background-color: var(--Branco);
+  border: red solid;
+  border-radius: 2rem;
+}
+
+.invite h1 p{
+  color: var(--Cyan);
+}
+.invite h2 p{
+  color: var(--Bright-Yellow);
+}
+
+.invite h3 p{
+  color: var(--Grayish-Blue);
+}
+
+.monthvalue{
+  background-color: hsl(179, 62%, 39%);
+  color: var(--Branco);
+  border: red solid;
+  border-radius: 2rem;
+}
+
+.monthvalue p p{
+  color:var(--Grayish-Blue)
+}
+
+.monthvalue button{
+  background-color: var(--Bright-Yellow);
+}
+
+.why{
+  background-color: var(--Cyan);
+  color: var(--Light-Gray);
+  border-bottom-right:red ;
+  border-radius: 2rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/*
+Mobile: 375px
+Desktop: 1440px
+*/
