@@ -70,8 +70,14 @@ body {
   padding: 2rem 2rem 2rem 2rem;
 }
 
-.monthvalue h3:nth-last-of-type(1) {
+.monthvalue h2 {
+  color: var(--Branco);
+  padding-bottom: 1rem;
+}
+
+.monthvalue h3 {
   color: var(--Grayish-Blue);
+  padding-bottom: 2rem;
 }
 
 .monthvalue button {
@@ -81,7 +87,7 @@ body {
   border: none;
   border-radius: 0.5rem;
   color: var(--Branco);
-  margin: 1rem;
+  margin: 3rem 0 0rem 0rem;
 }
 
 .btn:hover {
@@ -106,7 +112,70 @@ body {
   font-weight: 700;
 }
 
-/*
-Mobile: 375px
-Desktop: 1440px
-*/
+@media screen and (max-width: 500px) {
+  .container {
+    display: grid;
+    grid-template-columns: 30rem;
+    grid-template-rows: 17rem 17rem 17rem;
+  }
+
+  .invite {
+    grid-column: 1;
+    font-size: 1rem;
+  }
+
+  .invite h1 p {
+    padding: 1rem 0rem 1rem 2rem;
+  }
+
+  .invite h2 p {
+    font-size: 1.3rem;
+    padding: 0rem 2rem 1rem 2rem;
+  }
+
+  .invite h3 p {
+    font-size: 1.1rem;
+    padding: 0rem 2rem;
+  }
+
+  .monthvalue {
+    border-bottom-left-radius: 0rem;
+    font-weight: 400;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  .monthvalue h2 {
+    color: var(--Branco);
+    padding-bottom: 0.8rem;
+  }
+
+  .monthvalue h3 {
+    padding-bottom: 1rem;
+  }
+
+  .monthvalue button {
+    background-color: var(--Bright-Yellow);
+    width: 25rem;
+    margin: 1rem;
+  }
+
+  .why {
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
+
+  .why ul {
+    padding: 0 0 0 2rem;
+    list-style: none;
+    font-weight: 400;
+  }
+
+  .why ul li {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .why ul li h3 {
+    padding-top: 2rem;
+  }
+}
